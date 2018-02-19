@@ -25,7 +25,7 @@ SECRET_KEY = '4xo-2h(ptk46i#@3qd*m8tu_3vg(3+!)-n++b4v8l6c2)mmp-c'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['muzyka.pythonanywhere.com']
 
 
 # Application definition
