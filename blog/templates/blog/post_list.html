@@ -6,17 +6,12 @@
         <div>
             <h1><a href="">Django B blog</a></h1>
         </div>
-
+    {% for post in posts %}
         <div>
-            <p>published: 20.02.2017, 10:34</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Rock music is a broad genre of popular music that originated as "rock and roll" in the United States in the early 1950s, and developed into a range of different styles in the 1960s and later, particularly in the United Kingdom and in the United States. It has its roots in 1940s and 1950s rock and roll</p>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
         </div>
-
-        <div>
-            <p>published: 20.02.2017, 10:34</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Jazz is a music genre that originated in the African-American communities of New Orleans, United States, in the late 19th and early 20th centuries, and developed from roots in blues and ragtime</p>
-        </div>
+    {% endfor %}
     </body>
 </html>
